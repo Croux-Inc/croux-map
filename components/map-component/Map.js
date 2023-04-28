@@ -86,7 +86,7 @@ export default function Map() {
   return (
     <>
       <MapContainer
-        center={[39.695769, -97.707045]}
+        center={[36.499279, -97.283213]}
         zoom={5}
         className={style.map}
       >
@@ -125,6 +125,8 @@ export default function Map() {
           })}
       </MapContainer>
       <IconToggleButton
+        id={"talent-toggle"}
+        tooltip={"Toggle Show Talent"}
         style={talentButtonStyle}
         active={useTalent}
         setActive={setUseTalent}
@@ -132,6 +134,8 @@ export default function Map() {
         <UserIcon className="h-6 w-6" />
       </IconToggleButton>
       <IconToggleButton
+        id={"business-toggle"}
+        tooltip={"Toggle Show Businesses"}
         style={businessButtonStyle}
         active={useBusiness}
         setActive={setUseBusiness}
